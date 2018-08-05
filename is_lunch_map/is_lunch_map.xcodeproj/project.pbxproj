@@ -10,12 +10,12 @@
 		16EC0E216A2F504E8687D75B /* Pods_is_lunch_mapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 114F765759D00092CE9B70AD /* Pods_is_lunch_mapTests.framework */; };
 		1EFC21FB3549374BE89F6B1B /* Pods_is_lunch_map.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 574047A02DF0DAB9E4C19D46 /* Pods_is_lunch_map.framework */; };
 		956100B121172D2300146C53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956100B021172D2300146C53 /* AppDelegate.swift */; };
-		956100B321172D2300146C53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956100B221172D2300146C53 /* ViewController.swift */; };
 		956100B621172D2300146C53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 956100B421172D2300146C53 /* Main.storyboard */; };
 		956100B821172D2300146C53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 956100B721172D2300146C53 /* Assets.xcassets */; };
 		956100BB21172D2300146C53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 956100B921172D2300146C53 /* LaunchScreen.storyboard */; };
 		956100C621172D2300146C53 /* is_lunch_mapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956100C521172D2300146C53 /* is_lunch_mapTests.swift */; };
 		956100D121172D2300146C53 /* is_lunch_mapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956100D021172D2300146C53 /* is_lunch_mapUITests.swift */; };
+		956100DF2117334000146C53 /* RestaurantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956100DE2117334000146C53 /* RestaurantListViewController.swift */; };
 		E6EB5BC548D1886D97ADAD82 /* Pods_is_lunch_mapUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C58E5FB12F8FF07F6016EED7 /* Pods_is_lunch_mapUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +44,6 @@
 		574047A02DF0DAB9E4C19D46 /* Pods_is_lunch_map.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_is_lunch_map.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		956100AD21172D2300146C53 /* is_lunch_map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = is_lunch_map.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		956100B021172D2300146C53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		956100B221172D2300146C53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		956100B521172D2300146C53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		956100B721172D2300146C53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		956100BA21172D2300146C53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,6 +54,7 @@
 		956100CC21172D2300146C53 /* is_lunch_mapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = is_lunch_mapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		956100D021172D2300146C53 /* is_lunch_mapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = is_lunch_mapUITests.swift; sourceTree = "<group>"; };
 		956100D221172D2300146C53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		956100DE2117334000146C53 /* RestaurantListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListViewController.swift; sourceTree = "<group>"; };
 		96019DD731C08C32E88D4BF8 /* Pods-is_lunch_mapUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-is_lunch_mapUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-is_lunch_mapUITests/Pods-is_lunch_mapUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B5DB06071EDAA3F6A63D90F8 /* Pods-is_lunch_map.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-is_lunch_map.debug.xcconfig"; path = "Pods/Target Support Files/Pods-is_lunch_map/Pods-is_lunch_map.debug.xcconfig"; sourceTree = "<group>"; };
 		C58E5FB12F8FF07F6016EED7 /* Pods_is_lunch_mapUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_is_lunch_mapUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,7 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				956100B021172D2300146C53 /* AppDelegate.swift */,
-				956100B221172D2300146C53 /* ViewController.swift */,
+				956100DE2117334000146C53 /* RestaurantListViewController.swift */,
 				956100B421172D2300146C53 /* Main.storyboard */,
 				956100B721172D2300146C53 /* Assets.xcassets */,
 				956100B921172D2300146C53 /* LaunchScreen.storyboard */,
@@ -415,7 +415,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				956100B321172D2300146C53 /* ViewController.swift in Sources */,
+				956100DF2117334000146C53 /* RestaurantListViewController.swift in Sources */,
 				956100B121172D2300146C53 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
