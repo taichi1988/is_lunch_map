@@ -22,6 +22,8 @@
 		956100ED21173C7C00146C53 /* ShopListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956100EC21173C7C00146C53 /* ShopListRequest.swift */; };
 		956100F021173CA300146C53 /* ShopList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956100EF21173CA300146C53 /* ShopList.swift */; };
 		956100F32118A25C00146C53 /* CellReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956100F22118A25C00146C53 /* CellReusable.swift */; };
+		956100F52118ABBD00146C53 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956100F42118ABBD00146C53 /* MapViewController.swift */; };
+		956100F72118AC8800146C53 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 956100F62118AC8800146C53 /* MapKit.framework */; };
 		E6EB5BC548D1886D97ADAD82 /* Pods_is_lunch_mapUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C58E5FB12F8FF07F6016EED7 /* Pods_is_lunch_mapUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +69,8 @@
 		956100EC21173C7C00146C53 /* ShopListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopListRequest.swift; sourceTree = "<group>"; };
 		956100EF21173CA300146C53 /* ShopList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopList.swift; sourceTree = "<group>"; };
 		956100F22118A25C00146C53 /* CellReusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellReusable.swift; sourceTree = "<group>"; };
+		956100F42118ABBD00146C53 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		956100F62118AC8800146C53 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		96019DD731C08C32E88D4BF8 /* Pods-is_lunch_mapUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-is_lunch_mapUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-is_lunch_mapUITests/Pods-is_lunch_mapUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B5DB06071EDAA3F6A63D90F8 /* Pods-is_lunch_map.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-is_lunch_map.debug.xcconfig"; path = "Pods/Target Support Files/Pods-is_lunch_map/Pods-is_lunch_map.debug.xcconfig"; sourceTree = "<group>"; };
 		C58E5FB12F8FF07F6016EED7 /* Pods_is_lunch_mapUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_is_lunch_mapUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				956100F72118AC8800146C53 /* MapKit.framework in Frameworks */,
 				1EFC21FB3549374BE89F6B1B /* Pods_is_lunch_map.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,6 +109,7 @@
 		23578ED00954E1F07E9D480C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				956100F62118AC8800146C53 /* MapKit.framework */,
 				574047A02DF0DAB9E4C19D46 /* Pods_is_lunch_map.framework */,
 				114F765759D00092CE9B70AD /* Pods_is_lunch_mapTests.framework */,
 				C58E5FB12F8FF07F6016EED7 /* Pods_is_lunch_mapUITests.framework */,
@@ -173,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				956100E1211737E100146C53 /* RestaurantListViewController.swift */,
+				956100F42118ABBD00146C53 /* MapViewController.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -485,6 +492,7 @@
 				956100E52117380A00146C53 /* UILayoutPriorityExtension.swift in Sources */,
 				956100F021173CA300146C53 /* ShopList.swift in Sources */,
 				956100B121172D2300146C53 /* AppDelegate.swift in Sources */,
+				956100F52118ABBD00146C53 /* MapViewController.swift in Sources */,
 				956100E2211737E100146C53 /* RestaurantListViewController.swift in Sources */,
 				956100E821173BA900146C53 /* APIClient.swift in Sources */,
 				956100ED21173C7C00146C53 /* ShopListRequest.swift in Sources */,

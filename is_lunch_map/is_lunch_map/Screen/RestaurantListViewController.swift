@@ -60,7 +60,12 @@ extension RestaurantListViewController: UITableViewDataSource {
 }
 
 // MARK: - Delegate
-extension RestaurantListViewController: UITableViewDelegate {}
+extension RestaurantListViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = MapViewController()
+        show(vc, sender: nil)
+    }
+}
 
 // MARK: - Cell
 private final class ShopListCell: UITableViewCell, CellReusable {
