@@ -30,20 +30,9 @@ final class RestaurantListViewController: UIViewController {
     }
     
     private func fetchShopList() {
-//        Alamofire
-//            .request("https://script.google.com/macros/s/AKfycbw_KgwrwZflExGHq2ia102Y9HC_ZIF0GwjbIbO-dQr38u5gM-E/exec?action=shop_list")
-//            .responseJSON { response in
-//                switch response.result {
-//                case .success(let json):
-//                    print(json)
-//                case .failure(let error):
-//                    print(error)
-//                }
-//            }
-        
         ApiClient.request(ShopListRequest())
             .subscribe(onSuccess: { [weak self] shops in
-                print(shops.shops[1])
+                print(shops)
             }, onError: { error in
                 print(error)
             })
