@@ -69,9 +69,10 @@ extension RestaurantListViewController: UITableViewDataSource {
 extension RestaurantListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let restaurant = restaurants[indexPath.row]
-        let googlMapUrl = "https://www.google.com/maps/@\(restaurant.latitude),\(restaurant.longitude),18z"
-        UIApplication.shared.open(URL(string: googlMapUrl)!,
-                                  options: [:], completionHandler: nil)
+        let googlMapUrl = "comgooglemaps://?center=\(restaurant.latitude),\(restaurant.longitude)&zoom=16"
+        UIApplication.shared.open(URL(string: googlMapUrl)!, options: [:], completionHandler: nil)
+        
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 
