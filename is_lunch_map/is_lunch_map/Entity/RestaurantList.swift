@@ -8,17 +8,17 @@
 
 import ObjectMapper
 
-struct ShopList: Mappable {
-    var shops: [Shop] = []
+struct RestaurantList: Mappable {
+    var restaurants: [Restaurant] = []
     
     init?(map: Map) {}
     
     mutating func mapping(map: Map) {
-        shops <- map["items"]
+        restaurants <- map["items"]
     }
 }
 
-struct Shop: Mappable {
+struct Restaurant: Mappable {
     var id: Int = 0
     var shopName: String = ""
     var shopNameKana: String = ""

@@ -50,8 +50,9 @@ class ApiClient {
                     log += "params    :\(parameters)\n"
                     log += "header    :\(header)\n"
                     log += "timeout   :\(timeout)\n"
-                    log += "response  :\n"
-                    log += "\(json)\n"
+                    // for debuging json
+//                    log += "response  :\n"
+//                    log += "\(json)\n"
                     log += "*** ENDLINE *****************************************************\n"
                     log += "*****************************************************************\n"
                     print(log)

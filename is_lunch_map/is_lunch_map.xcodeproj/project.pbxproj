@@ -19,8 +19,8 @@
 		956100E52117380A00146C53 /* UILayoutPriorityExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956100E42117380A00146C53 /* UILayoutPriorityExtension.swift */; };
 		956100E821173BA900146C53 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956100E721173BA900146C53 /* APIClient.swift */; };
 		956100EA21173BCA00146C53 /* RequestProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956100E921173BCA00146C53 /* RequestProtocol.swift */; };
-		956100ED21173C7C00146C53 /* ShopListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956100EC21173C7C00146C53 /* ShopListRequest.swift */; };
-		956100F021173CA300146C53 /* ShopList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956100EF21173CA300146C53 /* ShopList.swift */; };
+		956100ED21173C7C00146C53 /* RestaurantListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956100EC21173C7C00146C53 /* RestaurantListRequest.swift */; };
+		956100F021173CA300146C53 /* RestaurantList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956100EF21173CA300146C53 /* RestaurantList.swift */; };
 		956100F32118A25C00146C53 /* CellReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956100F22118A25C00146C53 /* CellReusable.swift */; };
 		956100F52118ABBD00146C53 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956100F42118ABBD00146C53 /* MapViewController.swift */; };
 		956100F72118AC8800146C53 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 956100F62118AC8800146C53 /* MapKit.framework */; };
@@ -66,8 +66,8 @@
 		956100E42117380A00146C53 /* UILayoutPriorityExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILayoutPriorityExtension.swift; sourceTree = "<group>"; };
 		956100E721173BA900146C53 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		956100E921173BCA00146C53 /* RequestProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestProtocol.swift; sourceTree = "<group>"; };
-		956100EC21173C7C00146C53 /* ShopListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopListRequest.swift; sourceTree = "<group>"; };
-		956100EF21173CA300146C53 /* ShopList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopList.swift; sourceTree = "<group>"; };
+		956100EC21173C7C00146C53 /* RestaurantListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListRequest.swift; sourceTree = "<group>"; };
+		956100EF21173CA300146C53 /* RestaurantList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantList.swift; sourceTree = "<group>"; };
 		956100F22118A25C00146C53 /* CellReusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellReusable.swift; sourceTree = "<group>"; };
 		956100F42118ABBD00146C53 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		956100F62118AC8800146C53 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -204,7 +204,7 @@
 		956100EB21173C5800146C53 /* Request */ = {
 			isa = PBXGroup;
 			children = (
-				956100EC21173C7C00146C53 /* ShopListRequest.swift */,
+				956100EC21173C7C00146C53 /* RestaurantListRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -212,7 +212,7 @@
 		956100EE21173C8B00146C53 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				956100EF21173CA300146C53 /* ShopList.swift */,
+				956100EF21173CA300146C53 /* RestaurantList.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -490,12 +490,12 @@
 			files = (
 				956100F32118A25C00146C53 /* CellReusable.swift in Sources */,
 				956100E52117380A00146C53 /* UILayoutPriorityExtension.swift in Sources */,
-				956100F021173CA300146C53 /* ShopList.swift in Sources */,
+				956100F021173CA300146C53 /* RestaurantList.swift in Sources */,
 				956100B121172D2300146C53 /* AppDelegate.swift in Sources */,
 				956100F52118ABBD00146C53 /* MapViewController.swift in Sources */,
 				956100E2211737E100146C53 /* RestaurantListViewController.swift in Sources */,
 				956100E821173BA900146C53 /* APIClient.swift in Sources */,
-				956100ED21173C7C00146C53 /* ShopListRequest.swift in Sources */,
+				956100ED21173C7C00146C53 /* RestaurantListRequest.swift in Sources */,
 				956100EA21173BCA00146C53 /* RequestProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

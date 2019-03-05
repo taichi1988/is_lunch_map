@@ -9,8 +9,8 @@
 import Alamofire
 import ObjectMapper
 
-struct ShopListRequest: RequestProtocol {
-    typealias ResponseType = ShopList
+struct RestaurantListRequest: RequestProtocol {
+    typealias ResponseType = RestaurantList
     
     var method: HTTPMethod {
         return .get
