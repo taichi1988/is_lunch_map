@@ -24,6 +24,8 @@
 		956100F32118A25C00146C53 /* CellReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956100F22118A25C00146C53 /* CellReusable.swift */; };
 		956100F52118ABBD00146C53 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956100F42118ABBD00146C53 /* MapViewController.swift */; };
 		956100F72118AC8800146C53 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 956100F62118AC8800146C53 /* MapKit.framework */; };
+		9591089B222EDC2B00550191 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9591089A222EDC2B00550191 /* UIExtension.swift */; };
+		9591089D222EE60B00550191 /* FoundationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9591089C222EE60B00550191 /* FoundationExtension.swift */; };
 		E6EB5BC548D1886D97ADAD82 /* Pods_is_lunch_mapUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C58E5FB12F8FF07F6016EED7 /* Pods_is_lunch_mapUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +73,8 @@
 		956100F22118A25C00146C53 /* CellReusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellReusable.swift; sourceTree = "<group>"; };
 		956100F42118ABBD00146C53 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		956100F62118AC8800146C53 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		9591089A222EDC2B00550191 /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
+		9591089C222EE60B00550191 /* FoundationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationExtension.swift; sourceTree = "<group>"; };
 		96019DD731C08C32E88D4BF8 /* Pods-is_lunch_mapUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-is_lunch_mapUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-is_lunch_mapUITests/Pods-is_lunch_mapUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B5DB06071EDAA3F6A63D90F8 /* Pods-is_lunch_map.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-is_lunch_map.debug.xcconfig"; path = "Pods/Target Support Files/Pods-is_lunch_map/Pods-is_lunch_map.debug.xcconfig"; sourceTree = "<group>"; };
 		C58E5FB12F8FF07F6016EED7 /* Pods_is_lunch_mapUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_is_lunch_mapUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -188,6 +192,8 @@
 			isa = PBXGroup;
 			children = (
 				956100E42117380A00146C53 /* UILayoutPriorityExtension.swift */,
+				9591089A222EDC2B00550191 /* UIExtension.swift */,
+				9591089C222EE60B00550191 /* FoundationExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -488,6 +494,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9591089B222EDC2B00550191 /* UIExtension.swift in Sources */,
+				9591089D222EE60B00550191 /* FoundationExtension.swift in Sources */,
 				956100F32118A25C00146C53 /* CellReusable.swift in Sources */,
 				956100E52117380A00146C53 /* UILayoutPriorityExtension.swift in Sources */,
 				956100F021173CA300146C53 /* RestaurantList.swift in Sources */,

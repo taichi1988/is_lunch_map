@@ -8,7 +8,7 @@
 
 import UIKit
 import RxSwift
-import Alamofire
+import RxCocoa
 
 // MARK: - ViewController
 final class RestaurantListViewController: UIViewController {
@@ -53,8 +53,14 @@ extension RestaurantListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let restaurant = restaurants[indexPath.row]
         let cell = tableView.dequeueReusableCell(for: indexPath, as: Cell.self)
-        cell.set(shop: restaurants[indexPath.row])
+        cell.set(restaurant: restaurant)
+        cell.tabelogLinkButton.rx.tap
+            .subscribe(onNext: {
+                UIApplication.shared.open(restaurant.tabelogUrl!, options: [:], completionHandler: nil)
+            })
+            .disposed(by: cell.disposeBag)
         return cell
     }
 }
@@ -62,15 +68,36 @@ extension RestaurantListViewController: UITableViewDataSource {
 // MARK: - UITableView Delegate methods
 extension RestaurantListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = MapViewController()
-        show(vc, sender: nil)
+        let restaurant = restaurants[indexPath.row]
+        let googlMapUrl = "https://www.google.com/maps/@\(restaurant.latitude),\(restaurant.longitude),18z"
+        UIApplication.shared.open(URL(string: googlMapUrl)!,
+                                  options: [:], completionHandler: nil)
     }
 }
 
 // MARK: - Cell
 extension RestaurantListViewController {
     private final class Cell: UITableViewCell, CellReusable {
-        private lazy var shopNameLabel = UILabel()
+        private lazy var thumbView: UIImageView = {
+            let imageView = UIImageView()
+            imageView.backgroundColor = .gray
+            imageView.layer.setCorner(radius: 6)
+            return imageView
+        }()
+        private lazy var nameLabel: UILabel = {
+            let label = UILabel ()
+            label.font = .boldSystemFont(ofSize: 16)
+            label.textColor = .darkText
+            return label
+        }()
+        lazy var tabelogLinkButton: UIButton = {
+            let button = UIButton()
+            button.setImage(UIImage(named: "tabelog_log"), for: .normal)
+            button.setTitleColor(.blue, for: .normal)
+            return button
+        }()
+        
+        var disposeBag = DisposeBag()
         
         override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
             super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -82,17 +109,35 @@ extension RestaurantListViewController {
             fatalError("init(coder:) has not been implemented")
         }
         
+        override func prepareForReuse() {
+            super.prepareForReuse()
+            disposeBag = DisposeBag()
+        }
+        
         private func initLayout() {
-            contentView.addSubview(shopNameLabel)
-            shopNameLabel.font = .boldSystemFont(ofSize: 14)
-            shopNameLabel.textColor = .darkText
-            shopNameLabel.snp.makeConstraints { make in
-                make.top.left.bottom.equalToSuperview().inset(12)
+            contentView.addSubviews(thumbView, nameLabel, tabelogLinkButton)
+            thumbView.snp.makeConstraints { make in
+                make.top.left.bottom.equalToSuperview().inset(8)
+                make.width.equalTo(80)
+                make.height.equalTo(thumbView.snp.width)
+            }
+            nameLabel.setContentCompressionResistancePriority(.required, for: .vertical)
+            nameLabel.snp.makeConstraints { make in
+                make.top.equalTo(thumbView)
+                make.left.equalTo(thumbView.snp.right).offset(8)
+                make.right.equalToSuperview().inset(8)
+            }
+            tabelogLinkButton.snp.makeConstraints { make in
+                make.top.equalTo(nameLabel.snp.bottom).offset(8)
+                make.left.equalTo(nameLabel)
+                make.bottom.equalTo(thumbView)
+                make.width.equalTo(tabelogLinkButton.snp.height)
             }
         }
         
-        func set(shop: Restaurant) {
-            shopNameLabel.text = shop.shopName
+        func set(restaurant: Restaurant) {
+            nameLabel.text = restaurant.shopName
+            tabelogLinkButton.isHidden = restaurant.tabelogUrl.isNil
         }
     }
 }
