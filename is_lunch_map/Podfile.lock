@@ -1,24 +1,24 @@
 PODS:
-  - Alamofire (4.7.1)
-  - AlamofireImage (3.3.1):
-    - Alamofire (~> 4.5)
-  - KRActivityIndicatorView (2.1.2)
-  - KRProgressHUD (3.2.2):
-    - KRActivityIndicatorView (= 2.1.2)
-  - ObjectMapper (3.1.0)
-  - RxBlocking (4.1.2):
+  - Alamofire (4.8.1)
+  - AlamofireImage (3.5.0):
+    - Alamofire (~> 4.8)
+  - ObjectMapper (3.4.2)
+  - RxAtomic (4.4.1)
+  - RxBlocking (4.4.1):
+    - RxAtomic (~> 4.4)
     - RxSwift (~> 4.0)
-  - RxCocoa (4.1.2):
+  - RxCocoa (4.4.1):
     - RxSwift (~> 4.0)
-  - RxSwift (4.1.2)
-  - RxTest (4.1.2):
+  - RxSwift (4.4.1):
+    - RxAtomic (~> 4.4)
+  - RxTest (4.4.1):
+    - RxAtomic (~> 4.4)
     - RxSwift (~> 4.0)
-  - SnapKit (4.0.0)
+  - SnapKit (4.2.0)
 
 DEPENDENCIES:
   - Alamofire
   - AlamofireImage
-  - KRProgressHUD
   - ObjectMapper
   - RxBlocking
   - RxCocoa
@@ -30,9 +30,8 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - AlamofireImage
-    - KRActivityIndicatorView
-    - KRProgressHUD
     - ObjectMapper
+    - RxAtomic
     - RxBlocking
     - RxCocoa
     - RxSwift
@@ -40,17 +39,16 @@ SPEC REPOS:
     - SnapKit
 
 SPEC CHECKSUMS:
-  Alamofire: 68d7d521118d49c615a8d2214d87cdf525599d30
-  AlamofireImage: 3b35b586853abaf94ca1250f4e94cff3c21a4c0d
-  KRActivityIndicatorView: 27e7a7e3da7fbc8e5405fbc4088b51cc2095a410
-  KRProgressHUD: 8872da74b1c462e15c82a8fff250a2d34ee82ea2
-  ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
-  RxBlocking: f6054985901412fc8c02daa84e92d4ba68c61389
-  RxCocoa: d88ba0f1f6abf040011a9eb4b539324fc426843a
-  RxSwift: e49536837d9901277638493ea537394d4b55f570
-  RxTest: e634f15fd2c2cd0e0120132ef7a4f7be69ad0393
-  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  AlamofireImage: 1aea346f4dda2f6c67622fa5a89fcbb80d79cc16
+  ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
+  RxAtomic: f8d6adc1ccb87a767811269e4875887bc74dbf19
+  RxBlocking: 5508e90d36ca2304632dc9378ece4e9b5d4bf656
+  RxCocoa: 2f35a76bf8887872e28a1914112395b11b8e0e64
+  RxSwift: 92fcf68dfef21f3e2ab1965363d9e7b3d787597e
+  RxTest: f8e548755ca3c7502dc41c7d3b28802c90115a38
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: 94dbebfa9467de5416ec1328d20077a7306c258d
+PODFILE CHECKSUM: 6ca4bbea637d39c92fc36a815aff811a9b9b1729
 
 COCOAPODS: 1.5.3

@@ -12,7 +12,6 @@ target 'is_lunch_map' do
   pod 'ObjectMapper'
   pod 'SnapKit'
   pod 'AlamofireImage'
-  pod 'KRProgressHUD'
 
   target 'is_lunch_mapTests' do
     inherit! :search_paths
